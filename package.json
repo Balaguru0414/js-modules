@@ -2,10 +2,10 @@
   "name": "starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
-    "start":"parcel index.html",
-    "build":"parcel build index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/Balaguru0414/js-modules#readme",
   "dependencies": {
+    "core-js": "^3.29.0",
     "leaflet": "^1.9.3",
     "lodash-es": "^4.17.21",
-    "parcel": "^2.8.3"
+    "regenerator-runtime": "^0.13.11"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
   }
 }

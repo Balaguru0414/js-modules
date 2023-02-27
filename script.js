@@ -1,19 +1,19 @@
 // Importing Module
 
-/*
-import {addToCart,totalPrize as price, tq} from "./shoppingCart.js";
-addToCart("bread", 10);
-console.log(price, totalQuantity);
-console.log(shippingCost);
 
-import './shoppingCart.js'
+// import {addToCart,totalPrize as price, tq} from "./shoppingCart.js";
+// addToCart("bread", 10);
+// console.log(price, totalQuantity);
+// console.log(shippingCost);
+
+// import './shoppingCart.js'
 console.log("Importing Module");
-import * as ShoppingCart from './shoppingCart'
-ShoppingCart.addToCart('Pizza',2);
+// import * as ShoppingCart from './shoppingCart'
+// ShoppingCart.addToCart('Pizza',2);
 
-import add,{addToCart,totalPrize as price, tq} from './shoppingCart.js';
-console.log(price);
-*/
+// import add,{addToCart,totalPrize as price, tq} from './shoppingCart.js';
+// console.log(price);
+
 import add, {cart} from './shoppingCart.js';
 add('Bread',2)
 add('Pizza',5)
@@ -111,14 +111,25 @@ if (module.hot){
   module.hot.accept();
 }
 
+class Person {
+  #greeting = 'Hey'
+  constructor(name){
+    this.name = name;
+    console.log(`${this.#greeting}, ${this.name}`);
+  }
+}
 
+const bala = new Person('Bala')
+// console.log('The End')
+console.log('Bala' ?? null)
 
+console.log(cart.find(el => el.quantity >= 2));
+Promise.resolve('Test').then(res => console.log(res));
 
+import 'core-js/stable';
+// import 'core-js/stable/array/find';
+// import 'core-js/stable/promise';
 
-
-
-
-
-
-
+// Polifilling async functions
+import 'regenerator-runtime/runtime'
 
